@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Meraki</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="description">I am <font fgcolor='#8E1C1C'>Meraki.</font>\nI am here to help you learn</string>
+    <string name="skip">Don\'t want to login? <u> Skip Login</u></string>
+    <string name="text1">This room is a continuation of another conversation  <u>\nClick here to see older messages </u></string>
+
+    <string name="description1"> Hello! Iam Meraki  \n\nI  will be your guide in your journey to learn programming  \n\nWhat is your first language preference ? </string>
+<string name="class1"> <font fgcolor='#8E1C1C'>Cohort </font>\nClass 7 - Operators    \n04:00PM - 05:00 PM   \nHindi</string>
+    <string name="class2"> <font fgcolor='#8E1C1C'>Cohort </font>\nClass 7 - Operators    \n04:00PM - 05:00 PM   \nHindi</string>
+    <string name="class3"> <font fgcolor='#8E1C1C'>Cohort </font>\nClass 7 - Operators    \n04:00PM - 05:00 PM   \nHindi</string>
+
+
+    <string name="nav_open">open</string>
+    <string name="nav_close">Close</string>
+
+</resources>

@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".SecondFragment">
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+       <androidx.cardview.widget.CardView
+           android:id="@+id/header_title"
+           android:layout_width="match_parent"
+           android:layout_height="80dp">
+
+
+           <RelativeLayout
+
+               android:layout_width="match_parent"
+               android:background="@color/white"
+               android:layout_height="80dp">
+
+               <TextView
+                   android:id="@+id/M"
+                   android:layout_width="73dp"
+                   android:layout_height="55dp"
+                   android:layout_centerVertical="true"
+                   android:layout_marginLeft="50dp"
+                   android:background="@drawable/custom_input2"
+                   android:backgroundTint="@color/blue"
+                   android:fontFamily="cursive"
+                   android:gravity="center"
+                   android:text="M"
+                   android:textColor="@color/white"
+                   android:textSize="40dp" />
+
+
+               <TextView
+                   android:id="@+id/meraki"
+                   android:layout_width="wrap_content"
+                   android:layout_toRightOf="@+id/M"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="20dp"
+                   android:textSize="20dp"
+                   android:textColor="@color/black"
+                   android:layout_height="wrap_content"
+                   android:text="Meraki" />
+
+               <TextView
+                   android:id="@+id/textView4"
+                   android:layout_below="@+id/meraki"
+                   android:layout_toRightOf="@+id/M"
+                   android:layout_width="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:textColor="@color/black"
+                   android:layout_marginTop="5dp"
+                   android:layout_height="wrap_content"
+                   android:text="2 members" />
+           </RelativeLayout>
+       </androidx.cardview.widget.CardView>
+
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="570dp"
+           android:layout_below="@+id/header_title"
+           android:background="@color/white">
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="570dp"
+               android:layout_marginBottom="80dp">
+
+               <View
+                   android:layout_width="100dp"
+                   android:layout_height="1dp"
+                   android:layout_marginLeft="30dp"
+                   android:layout_marginTop="20dp"
+                   android:background="@color/black" />
+
+
+               <TextView
+                   android:id="@+id/date"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center"
+                   android:text="Tue 28 Sep"
+                   android:textColor="@color/black"
+                   android:textSize="20dp" />
+
+               <View
+                   android:layout_width="100dp"
+                   android:layout_height="1dp"
+                   android:layout_marginStart="281dp"
+                   android:layout_marginLeft="-121dp"
+                   android:layout_marginTop="30dp"
+                   android:layout_marginEnd="30dp"
+                   android:layout_marginBottom="30dp"
+                   android:layout_toRightOf="@+id/date"
+                   android:background="@color/black" />
+
+               <TextView
+                   android:id="@+id/text1"
+                   android:layout_width="302dp"
+                   android:layout_height="53dp"
+                   android:layout_below="@+id/date"
+                   android:layout_marginLeft="30dp"
+                   android:layout_marginTop="30dp"
+                   android:drawableStart="@drawable/ic_baseline_warning_24"
+                   android:text="@string/text1"
+                   android:textColor="@color/black"
+                   android:textSize="15dp" />
+
+               <TextView
+                   android:id="@+id/tm"
+                   android:layout_width="45dp"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/text1"
+                   android:layout_marginLeft="50dp"
+                   android:layout_marginTop="30dp"
+                   android:background="@drawable/custom_input2"
+                   android:backgroundTint="@color/green"
+                   android:fontFamily="cursive"
+                   android:gravity="center"
+                   android:text="M"
+                   android:textColor="@color/white"
+                   android:textSize="40dp" />
+
+               <TextView
+                   android:id="@+id/tt"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@+id/tm"
+                   android:layout_marginLeft="25dp"
+                   android:layout_marginTop="150dp"
+                   android:textColor="@color/black"
+                   android:text="Meraki joined the room"
+                   android:textSize="20dp" />
+
+
+               <TextView
+                   android:id="@+id/tm2"
+                   android:layout_width="45dp"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/tm"
+                   android:layout_marginLeft="50dp"
+                   android:layout_marginTop="30dp"
+                   android:background="@drawable/custom_input2"
+                   android:backgroundTint="@color/green"
+                   android:fontFamily="cursive"
+                   android:gravity="center"
+                   android:text="M"
+                   android:textColor="@color/white"
+                   android:textSize="40dp" />
+
+               <TextView
+                   android:id="@+id/tt2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@+id/tm2"
+                   android:layout_marginLeft="25dp"
+                   android:layout_below="@id/tt"
+                   android:textColor="@color/black"
+                   android:layout_marginTop="50dp"
+                   android:text="Meraki invited you "
+                   android:textSize="20dp" />
+
+               <TextView
+                   android:id="@+id/tm3"
+                   android:layout_width="45dp"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/tm2"
+                   android:layout_marginLeft="50dp"
+                   android:layout_marginTop="30dp"
+                   android:background="@drawable/custom_input2"
+                   android:backgroundTint="@color/green"
+                   android:fontFamily="cursive"
+                   android:gravity="center"
+                   android:text="M"
+                   android:textColor="@color/white"
+                   android:textSize="40dp" />
+
+               <TextView
+                   android:id="@+id/tt3"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@+id/tm3"
+                   android:layout_marginLeft="25dp"
+                   android:layout_below="@id/tt2"
+                   android:layout_marginTop="50dp"
+                   android:textColor="@color/black"
+                   android:text="Meraki made no change "
+                   android:textSize="20dp" />
+
+               <TextView
+                   android:id="@+id/tm4"
+                   android:layout_width="45dp"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/tm3"
+                   android:layout_marginLeft="50dp"
+                   android:layout_marginTop="30dp"
+                   android:background="@drawable/custom_input2"
+                   android:backgroundTint="@color/red"
+                   android:fontFamily="cursive"
+                   android:gravity="center"
+                   android:text="R"
+                   android:textColor="@color/white"
+                   android:textSize="40dp" />
+
+               <TextView
+                   android:id="@+id/tt4"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@+id/tm4"
+                   android:layout_marginLeft="25dp"
+                   android:layout_below="@id/tt3"
+                   android:layout_marginTop="50dp"
+                   android:textColor="@color/black"
+                   android:text="You joined the room"
+                   android:textSize="20dp" />
+
+
+               <TextView
+                   android:id="@+id/MT"
+                   android:layout_width="70dp"
+                   android:layout_height="70dp"
+                   android:layout_below="@+id/tm4"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="30dp"
+                   android:background="@drawable/custom_input2"
+                   android:backgroundTint="@color/red"
+                   android:fontFamily="cursive"
+                   android:gravity="center"
+                   android:text="M"
+                   android:textColor="@color/white"
+                   android:textSize="40dp" />
+
+               <TextView
+               android:id="@+id/tt5"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_toRightOf="@+id/tm4"
+               android:layout_marginLeft="5dp"
+               android:layout_below="@id/tt4"
+               android:layout_marginTop="50dp"
+               android:text="Meraki"
+                   android:textColor="@color/green"
+               android:textSize="25dp" />
+
+
+               <TextView
+                   android:id="@+id/Detail"
+                   android:layout_width="318dp"
+                   android:layout_height="160dp"
+                   android:layout_below="@+id/tt5"
+                   android:layout_marginLeft="70dp"
+                   android:layout_marginTop="35dp"
+                   android:layout_marginRight="25dp"
+                   android:paddingTop="10dp"
+                   android:background="@drawable/custom_input"
+                   android:backgroundTint="@color/grey"
+                   android:paddingLeft="15dp"
+                   android:text="@string/description1"
+                   android:textColor="@color/black"
+                   android:textSize="15dp" />
+
+               <Button
+                   android:id="@+id/btnEnglish"
+                   android:layout_width="318dp"
+                   android:layout_height="50dp"
+                   android:layout_below="@+id/Detail"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginRight="35dp"
+                android:backgroundTint="@color/red"
+                   android:layout_marginLeft="70dp"
+                   android:text="ENGLISH"/>
+
+               <Button
+                   android:id="@+id/btnHindi"
+                   android:layout_width="318dp"
+                   android:layout_height="50dp"
+                   android:layout_below="@+id/btnEnglish"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginRight="35dp"
+                   android:backgroundTint="@color/red"
+                   android:layout_marginLeft="70dp"
+                   android:text="HINDI"/>
+
+
+
+
+           </RelativeLayout>
+
+
+       </ScrollView>
+
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_alignParentBottom="true"
+           android:background="@color/white"
+           android:layout_height="80dp">
+
+                       <EditText
+                           android:id="@+id/Send"
+                           android:layout_width="match_parent"
+                           android:layout_height="50dp"
+                           android:layout_centerVertical="true"
+                           android:layout_marginLeft="20dp"
+                           android:layout_marginRight="80dp"
+                           android:background="@drawable/custom_input3"
+                           android:textColorHint="@color/grey2"
+                           android:textColor="@color/black"
+                           android:hint="Send a message">
+
+                       </EditText>
+
+           <TextView
+               android:layout_width="50dp"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="350dp"
+               android:layout_marginTop="23dp"
+               android:textSize="30dp"
+               android:background="@drawable/ic_baseline_send_24" />
+
+
+       </RelativeLayout>
+
+
+   </RelativeLayout>
+
+
+
+
+
+
+
+
+<!--    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;-->
+<!--   <androidx.cardview.widget.CardView-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:background="@color/white"-->
+<!--       android:layout_height="80dp">-->
+
+
+<!--      <RelativeLayout-->
+<!--          android:layout_width="match_parent"-->
+<!--          android:background="@color/white"-->
+<!--          android:layout_height="match_parent">-->
+
+
+<!--          <TextView-->
+<!--              android:id="@+id/M"-->
+<!--              android:layout_width="73dp"-->
+<!--              android:layout_height="55dp"-->
+<!--              android:layout_marginLeft="50dp"-->
+<!--              android:background="@drawable/custom_input2"-->
+<!--              android:backgroundTint="@color/blue"-->
+<!--              android:fontFamily="cursive"-->
+<!--              android:gravity="center"-->
+<!--              android:text="M"-->
+<!--              android:layout_centerVertical="true"-->
+<!--              android:textColor="@color/white"-->
+<!--              android:textSize="40dp" />-->
+
+<!--          <TextView-->
+<!--              android:id="@+id/meraki"-->
+<!--              android:layout_width="wrap_content"-->
+<!--              android:layout_toRightOf="@+id/M"-->
+<!--              android:layout_marginLeft="20dp"-->
+<!--              android:layout_marginTop="20dp"-->
+<!--              android:textSize="20dp"-->
+<!--              android:textColor="@color/black"-->
+<!--              android:layout_height="wrap_content"-->
+<!--              android:text="Meraki" />-->
+
+<!--          <TextView-->
+<!--              android:id="@+id/textView4"-->
+<!--              android:layout_below="@+id/meraki"-->
+<!--              android:layout_toRightOf="@+id/M"-->
+<!--              android:layout_width="wrap_content"-->
+<!--              android:layout_marginLeft="20dp"-->
+<!--              android:textColor="@color/black"-->
+<!--              android:layout_marginTop="5dp"-->
+<!--              android:layout_height="wrap_content"-->
+<!--              android:text="2 members" />-->
+<!--      </RelativeLayout>-->
+<!--   </androidx.cardview.widget.CardView>-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="564dp"-->
+<!--        android:background="@color/blue">-->
+
+<!--    </RelativeLayout>-->
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:layout_weight="0.1"-->
+<!--        android:background="@color/blue">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:background="@color/white"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <EditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:layout_marginRight="80dp"-->
+<!--                android:background="@drawable/custom_input"-->
+<!--                android:hint="Send a message"-->
+<!--                android:textColor="@color/black">-->
+
+<!--            </EditText>-->
+
+<!--        </RelativeLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+</FrameLayout>

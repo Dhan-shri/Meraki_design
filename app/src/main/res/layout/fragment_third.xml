@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+        android:background="@color/sb"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+
+    tools:context=".ThirdFragment"
+    tools:ignore="UseSwitchCompatOrMaterialXml">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_input"
+        android:gravity="center"
+        android:textAlignment="center">
+
+    </androidx.appcompat.widget.SearchView>
+
+    <TextView
+        android:id="@+id/eng"
+        android:layout_width="109dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/search"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_input4"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="English"
+        android:textColor="@color/red"
+        android:textSize="15dp" />
+
+
+    <TextView
+        android:id="@+id/hin"
+        android:layout_width="109dp"
+        android:layout_height="42dp"
+        android:layout_toRightOf="@+id/eng"
+        android:layout_below="@+id/search"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/custom_input4"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="English"
+        android:textColor="@color/red"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/upcoming"
+        android:layout_below="@+id/eng"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content"
+        android:text="Upcoming Classses" />
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/only"-->
+<!--        android:layout_below="@+id/eng"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_toRightOf="@+id/upcoming"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="18dp"-->
+<!--        android:layout_marginLeft="70dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Only Enrolled" />-->
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_alignBottom="@+id/upcoming"
+        android:layout_marginLeft="80dp"
+        android:layout_toRightOf="@+id/upcoming"
+        android:text="Only Enrolled   "
+        android:textColor="@color/black" />
+
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_below="@+id/upcoming"
+       android:layout_marginTop="20dp"
+       android:layout_height="match_parent">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_below="@+id/upcoming"
+           android:layout_marginTop="20dp"
+           android:layout_height="match_parent">
+
+
+           <TextView
+               android:id="@+id/class1"
+               android:layout_width="164dp"
+               android:layout_marginTop="5dp"
+               android:background="@drawable/custom_input"
+               android:layout_marginLeft="20dp"
+               android:layout_height="110dp"
+               android:gravity="center"
+               android:textColor="@color/black"
+               android:textSize="15dp"
+               android:text="@string/class1" />
+
+
+           <TextView
+               android:id="@+id/class2"
+               android:layout_width="164dp"
+               android:layout_marginTop="5dp"
+               android:layout_toRightOf="@+id/class1"
+               android:background="@drawable/custom_input"
+               android:layout_marginLeft="20dp"
+               android:gravity="center"
+               android:textSize="15dp"
+               android:textColor="@color/black"
+               android:layout_height="110dp"
+               android:text="@string/class2" />
+
+
+
+
+           <TextView
+               android:id="@+id/class3"
+               android:layout_width="164dp"
+               android:textColor="@color/black"
+               android:gravity="center"
+               android:textSize="15dp"
+               android:layout_marginTop="5dp"
+               android:layout_below="@+id/class1"
+               android:background="@drawable/custom_input"
+               android:layout_marginLeft="20dp"
+               android:layout_height="110dp"
+               android:text="@string/class3" />
+
+           <TextView
+               android:id="@+id/class4"
+               android:layout_width="164dp"
+               android:layout_height="110dp"
+               android:layout_below="@+id/class3"
+               android:layout_marginLeft="20dp"
+               android:layout_marginTop="5dp"
+               android:background="@drawable/custom_input"
+               android:gravity="center"
+               android:text="@string/class3"
+               android:textColor="@color/black"
+               android:textSize="15dp" />
+
+           <TextView
+               android:id="@+id/class5"
+               android:layout_width="164dp"
+               android:textColor="@color/black"
+               android:gravity="center"
+               android:textSize="15dp"
+               android:layout_marginTop="5dp"
+               android:layout_below="@+id/class4"
+               android:background="@drawable/custom_input"
+               android:layout_marginLeft="20dp"
+               android:layout_height="110dp"
+               android:text="@string/class3" />
+
+
+           <TextView
+               android:id="@+id/class6"
+               android:layout_width="164dp"
+               android:textColor="@color/black"
+               android:gravity="center"
+               android:textSize="15dp"
+               android:layout_marginTop="5dp"
+               android:layout_below="@+id/class5"
+               android:background="@drawable/custom_input"
+               android:layout_marginLeft="20dp"
+               android:layout_height="110dp"
+               android:text="@string/class3" />
+       </RelativeLayout>
+
+
+
+   </ScrollView>
+
+</RelativeLayout>

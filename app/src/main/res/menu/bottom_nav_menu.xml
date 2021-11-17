@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_learn"
+        android:icon="@drawable/ic_learn"
+        android:title="Course" />
+
+    <item
+        android:id="@+id/navigation_chat"
+        android:icon="@drawable/ic_chat"
+        android:title="Mentor" />
+
+    <item
+        android:id="@+id/navigation_playground"
+        android:icon="@drawable/ic_play"
+        android:title="Play" />
+
+
+</menu>
